@@ -1,0 +1,27 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev":"nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shizhangyan/TaskManager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shizhangyan/TaskManager/issues"
+  },
+  "homepage": "https://github.com/shizhangyan/TaskManager#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
