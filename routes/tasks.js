@@ -12,8 +12,4 @@ const {
 router.route("/").get(getAllTasks).post(createTask);
 router.route("/:id").get(getTask).patch(updateTask).delete(deleteTask);
 
-// router.route("/").get((req, res) => {
-//   res.send("all items");
-// });
-
 module.exports = router;
