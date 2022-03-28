@@ -7,16 +7,18 @@ const connectDB = require("./db/connect");
 require("dotenv").config();
 
 // load config
-dotenv.config({ path: "./config/config.env" });
+//dotenv.config({ path: "./config/config.env" });
 
-// routes
+//middleware
+app.use(express.static("./public"));
 app.use(express.json());
 
-app.get("/hello", (req, res) => {
-  res.send("Task Manager App");
-});
-
+// routes
 app.use("/api/v1/tasks", tasks);
+
+// app.get("/hello", (req, res) => {
+//   res.send("Task Manager App");
+// });
 
 const port = 3000;
 
